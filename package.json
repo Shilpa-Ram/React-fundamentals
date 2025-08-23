@@ -1,0 +1,31 @@
+{
+  "name": "react-fundamentals",
+  "version": "1.0.0",
+  "description": "React Fundamentals",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shilpa-Ram/React-fundamentals.git"
+  },
+  "keywords": [
+    "React",
+    "React-fundamentals"
+  ],
+  "author": "Shilpa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shilpa-Ram/React-fundamentals/issues"
+  },
+  "homepage": "https://github.com/Shilpa-Ram/React-fundamentals#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  }
+}

@@ -1,39 +1,29 @@
-{/* <div id='parent'>
-    <div id="child">
-        <h1> "I'm an h1 tag!</h1>
-        <h2> "I'm an h2 tag!</h2>
-    </div>
-     <div id="child2">
-        <h1> "I'm an h1 tag!</h1>
-        <h2> "I'm an h2 tag!</h2>
-    </div>
-</div> */}
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 
 const parent = React.createElement(
     'div',
     { id: 'parent' },
-    [React.createElement(
-        'div',
-        { id: 'child1' },[
-        React.createElement('h1', {}, "i'm an h1 tag!"),
-        React.createElement('h2', {}, "i'm an h2 tag!")
-    ]), React.createElement(
-        'div',
-        { id: 'child2' },[
-        React.createElement('h1', {}, "i'm an h1 tag!"),
-        React.createElement('h2', {}, "i'm an h2 tag!")
-    ])]
+    [
+        React.createElement(
+            'div',
+            { id: 'child1', key: 'child1' }, [
+                React.createElement('h1', { key: 'h1-1' }, "i'm an h1 tag!"),
+                React.createElement('h2', { key: 'h2-1' }, "i'm an h2 tag!")
+            ]
+        ),
+        React.createElement(
+            'div',
+            { id: 'child2', key: 'child2' }, [
+                React.createElement('h1', { key: 'h1-2' }, "i'm an h1 tag!"),
+                React.createElement('h2', { key: 'h2-2' }, "i'm an h2 tag!")
+            ]
+        )
+    ]
 );
-
-// const heading = React.createElement(            // Contains 3 props
-//     'h1',                                       // Tag name like div, h1, p, span
-//     { id: 'heading' },                          // Attributes
-//     'Hello World from React!'                   // Children
-// );
-
-// console.log(heading);   // object
-
+console.log(parent);
+const jsxHeading = <h1 id="heading" key="h1">Hello from JSX</h1>;
+console.log(jsxHeading);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(parent);
-// root.render(heading);
