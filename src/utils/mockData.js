@@ -3,9 +3,7 @@ const resList = [
     name: "Meghana Foods",
     cuisines: ["Biryani", "Andhra", "South Indian", "North Indian", "Chinese"],
     avgRating: "4.5",
-    sla: {
-      deliveryTime: 30,
-    },
+    deliveryTime: 30,
     costForTwo: "₹400 for two",
   },
   {
@@ -26,9 +24,7 @@ const resList = [
     name: "Hotel Empire",
     cuisines: ["Kebabs", "Biryani"],
     avgRating: "4.4",
-    sla: {
-      deliveryTime: 48,
-    },
+    deliveryTime: 48,
     costForTwo: "₹450 for two",
   },
   {
