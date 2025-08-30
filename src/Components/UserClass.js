@@ -8,6 +8,23 @@ class UserClass extends React.Component {
         count: 0
     };
 }
+
+async componentDidMount() {
+    const data = await fetch("https://api.github.com/users/Shilpa-Ram");
+    const json = await data.json();
+    console.log(json);
+    this.setState({
+        contact: json.login
+    }); 
+
+}
+componentDidUpdate() {
+    // console.log("Component did update");
+}
+componentWillUnmount() {
+    // console.log("Component will unmount");
+}
+
     render() {
         const {name} = this.props;
         const {location, contact, count} = this.state;
