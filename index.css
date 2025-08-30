@@ -46,6 +46,13 @@
     width: 100%;
 }
 
+.filter {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin: 20px;
+}
+
 .filter-btn {
     margin: 20px;
      cursor: pointer;
@@ -64,4 +71,19 @@
     padding: 10px;
     text-align: left;
     background-color: #f0f0f0;
+}
+
+.login-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.user-class {
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 20px;
 }
